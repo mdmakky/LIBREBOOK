@@ -6,6 +6,7 @@ import multer from "multer";
 import { connectDB } from "./src/database/db.js"
 import { errorMiddleWare } from "./src/middlewares/errorMiddleWares.js"
 import authRouter from "./src/routes/authRouter.js" 
+import bookRouter from "./src/routes/bookRouter.js"
 config({
     path:"./config/config.env"
 })
@@ -25,6 +26,8 @@ app.use(express.urlencoded({
 }))
 app.use(upload.none());
 app.use("/api/v1/auth", authRouter)
+app.use("/api/v1/book", bookRouter)
+
 connectDB()
 
 

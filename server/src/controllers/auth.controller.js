@@ -7,7 +7,6 @@ import { sentToken } from '../utils/sentToken.js';
 import { sendEmail } from '../utils/sentEmail.js';
 import { generateForgetPasswordEmailTemplate } from '../utils/emailTemplates.js';
 import crypto from 'crypto';
-import { log } from 'console';
 
 
 // ================= REGISTER =================
