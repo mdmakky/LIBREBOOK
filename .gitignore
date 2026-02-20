@@ -1,5 +1,6 @@
 # Dependencies
-server/node_modules/
+node_modules/
+**/node_modules/
 *.npm
 
 # Build outputs
@@ -23,4 +24,7 @@ npm-debug.log*
 # Environment variables
 .env
 .env.local
+.env.production
+**/config.env
 config/config.env
+server/config/config.env
